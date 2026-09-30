@@ -1,0 +1,18 @@
+Exercice:			do_argue_with_me
+Notions:			C06
+Fichier de rendu:	rendu.c
+Fonction autorisee:	write.
+
+Créez un programme qui prend votre prénom et nom en arguments, puis les imprime en les inversant. Ils sont séparés d'un espace et la fin est marquée par un retour à la ligne.
+Ex.: Cynthia Glardon --> Glardon Cynthia
+
+Votre programme doit pouvoir gérer des prénoms et noms multiples.
+Ex.: Elizabeth Martine Desportebelles Lonzard --> Lonzard Desportebelles Martine Elizabeth
+
+En cas d'erreur, imprimez un message explicite et faites en sorte que le programme ne crash pas.
+
+Concepts couverts par l'exercice:
+---------------------------------
+- faire récupérer des arguments à un programme
+- protéger contre les erreurs
+- écrire un message d'erreur dans STDERR

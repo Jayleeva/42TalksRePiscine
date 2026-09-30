@@ -1,0 +1,29 @@
+Exercice:			make_my_head_spin
+Notions:			C08 à C9
+Fichiers de rendu:	rendu.c, rendu.h, Makefile
+Fonction autorisee:	write, malloc, free.
+
+Créez un programme qui prend en arguments deux prénoms.
+Votre programme doit tout d'abord appeler la fonction shorten_name() pour chacun des prénoms.
+Prototypage:
+	char	*shorten_name(char *name);
+Celle-ci retourne une nouvelle chaîne de caractères composée de l'initiale du prénom reçu, suivie d'un point.
+Ex.: cynthia --> C.
+
+Votre programme doit ensuite appeler la fonction carve_names() avec les deux nouvelles chaînes en arguments.
+Prototypage:
+	void	carve_names(char *a, char *b);
+Celle-ci imprime les initiales injectées dans le texte " <a> + <b> = <3", suivi d'un retour à la ligne.
+Ex.: carve_names("C.", "A.") --> "C. + A. = <3"
+
+Les prototypages de toutes vos fonctions doivent se trouver dans un header.
+Votre programme doit être compilable via un Makefile contenant au minimum les règles all, clean, fclean, re.
+Votre Makefile ne doit pas relink.
+
+Votre programme ne doit pas avoir de leaks de mémoire.
+
+
+Concepts couverts par l'exercice:
+---------------------------------
+- utiliser des headers
+- faire et utiliser un Makefile

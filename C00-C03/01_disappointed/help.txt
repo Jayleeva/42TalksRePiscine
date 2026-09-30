@@ -1,0 +1,46 @@
+Observez les fonctions ci-dessous:
+
+void	testA(char c1, char c2)
+{
+	char	tmp;
+
+	tmp = c1;
+	c1 = c2;
+	c2 = tmp;
+}
+
+void	testB(char *c1, char *c2)
+{
+	char	tmp;
+
+	tmp = *c1;
+	*c1 = *c2;
+	*c2 = tmp;
+}
+
+Testez chacune de ses fonctions avec le main fourni ci-dessous.
+Que remarquez-vous? 
+
+#include <unistd.h>
+
+void	print_both(char c1, char c2)
+{
+	write(1, &c1, 1);
+	write(1, " ", 1);
+	write(1, &c2, 1);
+	write(1, "\n", 1);
+}
+
+int	main(void)
+{
+	char	c1;
+	char	c2;
+
+	c1 = 'a';
+	c2 = 'b';
+	testA(c1, c2);
+	print_both(c1, c2);
+	testB(&c1, &c2);
+	print_both(c1, c2);
+	return (0);
+}

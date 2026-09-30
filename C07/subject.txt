@@ -1,0 +1,30 @@
+Exercice:			core_memory
+Notions:			C07
+Fichier de rendu:	rendu.c
+Fonction autorisee:	write, malloc, free.
+
+Créez un programme qui prend en arguments une chaîne de caractères source et un caractère séparateur.
+Préparez un buffer assez grand pour contenir une nouvelle chaine: chaque caractère de la source séparé par le séparateur, à l'exception du dernier.
+Passez le buffer à une fonction add_separator() qui le remplit.
+
+Prototypage:
+	void	add_separator(char *buffer, char *src, char s);
+
+Passez le ensuite à une fonction print_str() qui l'imprime.
+
+Prototypage:
+	void	print_str(char *str);
+
+Imprimez un retour à la ligne.
+
+Votre programme ne doit pas avoir de leaks de mémoire.
+
+A questionner:
+- que se passe-t-il si le séparateur reçu est une chaîne de caractères au lieu d'un seul char?
+- que se passe-t-il si la source est un seul char au lieu d'une chaîne de caractères?
+
+Concepts couverts par l'exercice:
+---------------------------------
+- allouer de la mémoire et la libérer
+- utiliser des buffers (pointeurs, fermer la string, ...)
+- injecter des caractères dans une string pour en créer une nouvelle

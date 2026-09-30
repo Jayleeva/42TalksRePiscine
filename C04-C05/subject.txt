@@ -1,0 +1,17 @@
+Exercice:			call_from_inside_the_house
+Notions:			C04 à C05
+Fichier de rendu:	rendu.c
+Fonction autorisee:	write.
+
+En cas de bloquage, consultez le fichier help.txt.
+
+Créez une fonction récursive print_alphabet_rev() qui imprime l'alphabet en majuscules et à l'envers, depuis 'Z' jusqu'à la lettre reçue en argument.
+Prototypage:
+	void	print_alphabet_rev(char c)
+
+Complétez par un main qui appelle cette fonction.
+
+
+Concepts couverts par l'exercice:
+---------------------------------
+- utiliser la récursivité

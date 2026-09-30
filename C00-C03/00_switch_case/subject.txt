@@ -1,0 +1,31 @@
+Exercice:			switch_case
+Notions:			C00 a C03
+Fichier de rendu:	rendu.c
+Fonction autorisee:	write.
+
+Ne touchez pas au fichier 'main.c' ni au dossier 'tester'.
+Dans le fichier rendu.c, creez une fonction qui prend en argument deux chaines de caracteres: une source et une destination.
+
+Prototypage:
+	int	switch_case(char *src, char *dest);
+
+Le programme appellera votre fonction switch_case() en lui passant ligne par ligne le contenu du fichier 'input.txt'.
+Votre fonction doit lire la chaine source et la reecrire modifiee dans la chaine de destination en mettant les minuscules en majuscules et les majuscules en minuscules.
+Votre fonction doit imprimer la chaine de destination et retourner le nombre de caracteres imprimes.
+
+Ex.: "highkey 67! LOWKEY mIxEdkEy" --> "HIGHKEY 67! lowkey MiXeDKeY"; return value = 27.
+
+Vous pouvez modifier le contenu du fichier 'input.txt': le programme doit toujours fonctionner comme attendu.
+
+Pour tester vous-mêmes votre fonction, compilez main.c et rendu.c en un binaire, puis executez ce dernier.
+Pour vérifier qu'elle passe les tests, lancez 'tester.sh' dans le dossier 'tester'. En cas d'erreur, consultez le fichier 'trace.txt' dans le dossier 'tester'.
+
+
+Concepts couverts par l'exercice:
+---------------------------------
+- comprendre le prototypage d'une fonction
+- faire en sorte que la fonction retourne ce qui est attendu
+- parcourir une string et en assigner une autre
+- savoir utiliser la table ASCII
+- utiliser des conditions
+- compiler et executer un programme

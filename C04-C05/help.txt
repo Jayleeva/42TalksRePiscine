@@ -1,0 +1,56 @@
+Observez les fonctions ci-dessous:
+
+    ITERATIVE A
+	-----------
+	void	count(int n)
+	{
+		char	c;
+		while (n >= 0)
+		{
+			c = n + '0';
+			write(1, &c, 1);
+			n --;
+		}
+	}
+
+	RECURSIVE A
+	-----------
+	void	count(int n)
+	{
+		char	c = n + '0';
+		write(1, &c, 1);
+		if (n > 0)
+		{
+			count(n - 1);
+		}
+	}
+
+
+	ITERATIVE B 
+	------------
+	void	count(int n)
+	{
+		int		i = 0;
+		char	c;
+		while (i <= n)
+		{
+			c = i + '0';
+			write(1, &c, 1);
+			i ++;
+		}
+	}
+
+	RECURSIVE B
+	------------
+	void	count(int n)
+	{
+		if (n > 0)
+		{
+			count(n - 1);
+		}
+		char	c = n + '0';
+		write(1, &c, 1);
+	}
+
+Testez chacune de ses fonctions avec un main minimal qui se contente de les appeler avec la valeur 9 en argument.
+Que remarquez-vous? 

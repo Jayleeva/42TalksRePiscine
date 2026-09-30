@@ -1,0 +1,19 @@
+Exercice:			disappointed
+Notions:			C01
+Fichier de rendu:	rendu.c
+Fonction autorisee:	write.
+
+En cas de bloquage, consultez le fichier help.txt.
+
+En utilisant la fonction is_incr_odd(), créez un programme qui imprime uniquement les chiffres pairs de 0 à 9. Finissez par un retour à la ligne.
+
+Cette fonction prend un pointeur sur int en argument, et incrémente le int de 1. Elle retourne 0 si sa nouvelle valeur est paire, et 1 si elle est impaire.
+Prototypage:
+	int	is_incr_odd(int *i)
+
+Concepts couverts par l'exercice:
+---------------------------------
+- utiliser des pointeurs
+- faire son propre main
+- utiliser modulo
+- distinguer les int des char
